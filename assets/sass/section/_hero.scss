@@ -1,0 +1,51 @@
+.hero {
+    padding-top: 140px;
+
+    &__content {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__left {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            flex-direction: column;
+            width: 50%;
+            gap: 20px;
+
+
+            &__subheading {
+                font-size: 28px;
+                color: $red;
+                font-weight: 700;
+            }
+
+            &__heading {
+                font-size: 35px;
+                color: $black;
+                font-weight: 700;
+            }
+
+            &__text {
+                font-size: 18px;
+                color: $black;
+            }
+
+            &__btn {
+
+                @include btn($red, $white)
+            }
+        }
+
+        &__right {
+            width: 50%;
+
+            &__img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

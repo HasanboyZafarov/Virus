@@ -26,14 +26,23 @@
     }
 }
 
-@mixin btn($tb, $lr) {
-    background-color: $green;
-    color: $red;
-    border-radius: 5px;
-    padding: $tb $lr;
-    transition: all 0.3s;
+@mixin btn($bg, $color) {
+    padding: 15px 30px;
+    border-radius: 30px;
+    background: 0;
+    border: 3px solid $red;
+    background: $bg;
+    color: $color;
+    font-family: "Poppins",
+        sans-serif;
+
     &:hover {
-        background-color: rgb(19, 16, 16);
-        color: $green;
+        background: $bg;
+        border: 3px solid $bg;
+        color: $color;
+    }
+
+    &:active {
+        scale: 0.9;
     }
 }

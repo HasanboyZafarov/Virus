@@ -5,8 +5,8 @@
     background: $white;
     width: 100%;
     padding: 20px 0;
-    box-shadow: 0 1px 3px #0000001a, 0 4px 6px #0000000d;
     font-family: "Poppins", sans-serif;
+    border-bottom: 1px solid $black;
 
     &__content {
         display: flex;
@@ -69,4 +69,9 @@
             }
         }
     }
+}
+
+.header.active {
+    box-shadow: 0 1px 3px #0000001a,
+        0 4px 6px #0000000d;
 }
